@@ -1,0 +1,91 @@
+.kpi-card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid var(--gray-200);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .kpi-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary-400);
+  }
+  
+  .kpi-highlighted {
+    border-color: var(--primary-600);
+    background: var(--primary-50);
+  }
+  
+  .kpi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .kpi-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gray-600);
+  }
+  
+  .kpi-icon {
+    font-size: 20px;
+    color: var(--primary-500);
+  }
+  
+  .kpi-value-row {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+  
+  .kpi-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--gray-900);
+  }
+  
+  .kpi-unit {
+    font-size: 14px;
+    color: var(--gray-500);
+  }
+  
+  .kpi-change {
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .kpi-change-increase {
+    color: #16a34a;
+  }
+  
+  .kpi-change-decrease {
+    color: #dc2626;
+  }
+  
+  .kpi-change-stable {
+    color: var(--gray-500);
+  }
+  
+  /* Status Variants */
+  .kpi-positive {
+    border-left: 4px solid #16a34a;
+  }
+  
+  .kpi-negative {
+    border-left: 4px solid #dc2626;
+  }
+  
+  .kpi-critical {
+    border-left: 4px solid #dc2626;
+    background: #fee2e2;
+  }
+  
+  .kpi-stable {
+    border-left: 4px solid var(--primary-500);
+  }
+  

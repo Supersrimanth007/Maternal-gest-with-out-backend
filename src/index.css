@@ -1,0 +1,15 @@
+/* src/index.css */
+@import "./styles/global.css";
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#root {
+  width: 100%;
+}
